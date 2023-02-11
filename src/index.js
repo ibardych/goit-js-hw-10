@@ -14,12 +14,13 @@ const refs = {
 
 const fetchCountry = () => {
   const countryName = refs.searchBox.value.trim();
+
+  refs.countryListEl.innerHTML = '';
+  refs.countryInfoEl.innerHTML = '';
+
   if (countryName) {
     fetchCountries(countryName)
       .then(countries => {
-        refs.countryListEl.innerHTML = '';
-        refs.countryInfoEl.innerHTML = '';
-
         if (countries.length > 10)
           Notiflix.Notify.info(
             'Too many matches found. Please enter a more specific name.'
