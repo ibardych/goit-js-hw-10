@@ -1,0 +1,40 @@
+.country-list {
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__flag {
+    width: 30px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.country {
+  &__title {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
+
+  &__flag {
+    width: 40px;
+  }
+
+  &__name {
+    font-size: 22px;
+  }
+
+  &__list {
+    &-item {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+}
